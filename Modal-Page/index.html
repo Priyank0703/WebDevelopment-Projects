@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share-Modal</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="realfavicon.png" type="image/x-icon">
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- WRAPPER  -->
+    <div class="wrapper">
+        <!-- CIRCLE-1  -->
+        <div class="circle1"></div>
+        <!-- CIRCLE-2  -->
+        <div class="circle2"></div>
+        <!-- CONTAINER  -->
+        <div class="container">
+            <!-- IMAGE  -->
+            <div class="profileimg"><img src="profile.jpg" alt=""></div>
+
+            <!-- MAIN HEADING  -->
+            <div class="mainhead">
+                <h2>Priyank Patel</h2>
+            </div>
+
+            <!-- SUB HEADING  -->
+            <div class="subhead">
+                <h3>Software Engineer</h3>
+            </div>
+
+            <!-- BUTTONS  -->
+            <div class="btnGroup">
+                <!-- BUTTON-1  -->
+                <button onclick="openmodal()" class="btn btnShare">
+                    <i class="fa-solid fa-share"></i>
+                    <div class="desc">share my profile</div>
+                </button>
+
+
+                <!-- BUTTON-2  -->
+                <button class="btn btnFollow">
+                    <a href="https://instagram.com">Follow Me</a>
+                </button>
+            </div>
+        </div>
+
+        
+        <!-- SHARE-MODAL PART  -->
+
+        <!-- MODAL  -->
+        <div class="modal">
+            <!-- HEADER  -->
+            <div class="modalheader">
+                <div>Share My Profile</div>
+                <i onclick="closemodal()" class="fa-solid fa-xmark cancel"></i>
+            </div>
+
+            <!-- REST  -->
+            <div>
+
+                <h3>Share This Via</h3>
+                <!-- ICON-CONTAINER  -->
+                <div class="iconContainer">
+                    <!-- ICON-1  -->
+                    <a href="https://www.facebook.com"
+                        class="icon"
+                        id="facebook"
+                    >
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <!-- ICON-2  -->
+                    <a href="https://www.twitter.com"
+                        class="icon"
+                        id="twitter"
+                    >
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <!-- ICON-3  -->
+                    <a href="https://www.instagram.com"
+                        class="icon"
+                        id="instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <!-- ICON-4  -->
+                    <a href="https://www.whatsapp.com"
+                    class="icon"
+                    id="whatsapp"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <!-- ICON-5  -->
+                    <a href="https://www.telegram.com"
+                    class="icon"
+                    id="telegram"
+                    >
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Overlay  -->
+    <div class="overlay" onclick="closemodal()"></div>
+
+    <!-- ICON  -->
+    <script src="https://kit.fontawesome.com/69baa75edb.js"></script>
+    <!-- JS  -->
+    <script src="script.js"></script>
+</body>
+</html>

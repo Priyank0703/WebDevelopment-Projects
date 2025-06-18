@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&family=Raleway&family=Roboto&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* STARTING OF NAVIGATION BAR CSS */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em 0 6em;
+    width: 100%;
+}
+
+.logo {
+    width: 6rem;
+    height: 5.2rem;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #777c85;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+header nav ul li:nth-child(1) a {
+    color: #4e5dc0;
+}
+
+.btn p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    background: #4e5dc0;
+    border-radius: 5px;
+    padding: 14px 30px;
+    cursor: pointer;
+}
+
+/* ENDING OF NAVIGATION BAR CSS */
+
+/* STARTING OF BODY(CONTAINER) SECTION  */
+
+.container{
+    display: grid;
+    grid-template: repeat(2, minmax(150px, 1fr)) / repeat(2, minmax(150px, 1fr));
+    padding: 30px 50px 0 70px;
+    gap: 3rem;
+    overflow: hidden;
+    max-width: 1080px;
+    margin: 4em auto;
+}
+
+.container .texts{
+    margin-top: 2em;    
+}
+
+h1{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+    color: #16171c;    
+}
+
+.container hr{
+    width: 14em;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 1.25em 0;
+}
+
+.para{
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #808080;
+}
+
+.container .imgcontainer{
+    overflow: hidden;
+    object-fit: cover;
+    padding: 8px;
+}
+
+.img1{
+    width: 32em;
+    height: 25em;
+}
+
+.img2{
+    width: 27em;
+    height: 27em;  
+}
+
+.container .imgcontainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.line {
+    border: 1.5px solid #e1e2e4;
+}
+
+/* ENDING OF BODY(CONTAINER) SECTION  */
+
+/* STARTING OF FOOTER SECTION  */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em 0 2em;
+}
+
+footer h3{
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4e5dc0;
+    margin-bottom: 1rem;
+}
+
+footer p{
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+    color: #999999;
+    margin-bottom: 2.5rem;
+}
+
+footer .policy{
+    text-decoration-line: underline;
+    margin: 3rem 0 1rem 0;
+}
+
+.footer3 ul li{
+    list-style-type: none;
+}
+
+.footer3 ul li a{
+    text-decoration: none;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+footer .footer4 span {
+    width: 48px;
+    height: 48px;
+    background: #4e5dc0;
+    border-radius: 50%;
+    color: white;
+    font-weight: 900;
+    position: relative;
+    font-size: 16px;
+    display: inline-block;  
+    cursor: pointer;
+}
+  
+footer .footer4 span i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ENDING OF FOOTER SECTION  */

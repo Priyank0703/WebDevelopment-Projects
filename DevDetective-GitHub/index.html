@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FAVICON  -->
+    <link rel="shortcut icon" href="Images/realfavicon.png" type="image/x-icon">
+
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    />  
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADING  -->
+        <div class="heading">
+            <p>DevDetective</p>
+            <div class="theme">
+                <span></span>
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <!-- SEARCH  -->
+        <div class="searching">
+            <input id="search" type="text" placeholder=" Enter a Github username..." data-search-txt>
+            <button class="btn" data-submit>Search</button>
+        </div>    
+
+        <!-- SHOW DATA -->
+        <div class="result">
+            
+            <!-- FIRST PART  -->
+            <div class="profile">
+                <img src="" alt="" height="150px" width="150px" data-show-img>
+
+                    <div class="txt-1">
+                        <p data-name ></p>
+                        <a href="" data-git-link target="_blank"></a>
+                        <p data-bio class="bio"></p>
+                    </div>
+
+                <div class="joindate">
+                    <p data-join></p>
+                </div>
+            </div>
+
+            <!-- SECOND PART  -->
+            <div class="gitInfo">
+                <div class="box1">
+                    <p>Repos </p>
+                    <span class="span" data-repo></span>
+                </div>
+
+                <div class="box2">
+                    <p>followers </p>
+                    <span data-followers class="span"></span>
+                </div>
+
+                <div class="box3">
+                    <p>following </p>
+                    <span data-following class="span"></span>
+                </div>
+            </div>
+
+            <!-- THIRD PART  -->
+            <div class="userLinks">
+
+                <div>
+                    <img src="Images/location-icon.svg" alt="">
+                    <span data-loc></span>
+                </div>
+
+                <div>
+                    <img src="Images/website-icon.svg" alt="">
+                    <a href="" data-blog-link target="_blank"></a>
+                </div>
+
+                <div>
+                    <img src="Images/twitter-icon.svg" alt="">
+                    <a href="" data-twitter target="_blank"></a>
+                </div>
+
+                <div>
+                    <img src="Images/company-icon.svg" alt="">
+                    <span data-company></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- FONT-AWESOME  -->
+    <script src="https://kit.fontawesome.com/69baa75edb.js"></script>
+    <!-- SCRIPT  -->
+    <script src="script.js"></script>
+</body>
+</html>
